@@ -7,4 +7,4 @@ if num > 99 and num < 1000:
         num = num // 10
     print(sum)    
 else:
-    print("Введено неправельное число")
+    print("Введено неверное число")

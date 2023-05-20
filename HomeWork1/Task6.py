@@ -5,17 +5,20 @@
 # 385916 – счастливый, т.к. 3+8+5=9+1+6. Вам требуется написать
 # программу, которая проверяет счастливость билета.
 num = int(input('Введите номер билета: '))
-num1 = num // 1000
-num2 = num % 1000
-sum1 = 0
-while num1 > 0:
-    sum1 = sum1 + num1 % 10 
-    num1 = num1 // 10
-sum2 = 0
-while num2 > 0:
-    sum2 = sum2 + num2 % 10 
-    num2 = num2 // 10
-if sum1 == sum2:
-    print('yes')
+if num > 99999 and num < 1000000:
+    num1 = num // 1000
+    num2 = num % 1000
+    sum1 = 0
+    while num1 > 0:
+        sum1 = sum1 + num1 % 10 
+        num1 = num1 // 10
+    sum2 = 0
+    while num2 > 0:
+        sum2 = sum2 + num2 % 10 
+        num2 = num2 // 10
+    if sum1 == sum2:
+        print('yes')
+    else:
+        print('no')
 else:
-    print('no')
+    print('Номер билета указан не верно')
